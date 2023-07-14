@@ -71,6 +71,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -250px;
 
     
 }
@@ -217,6 +218,7 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 29px;
     line-height: 200px;
+    color: #fff;
 }
 #another p{
     color: gray;
@@ -231,7 +233,10 @@ header{
     height: 50px;
     background-color: #fff;
     margin: 0 auto;
+    position: relative;
     margin-top: 20px;
+    
+
     
 
 }
@@ -241,10 +246,73 @@ header{
     padding: 0px 0px 0px 8px;
     border: none; outline:none;
     
+    
+    
 }
 #submit input::placeholder{
     color:#E55473;
 }
-
+.subscribe{
+    position: absolute;
+    right: -83px;box-sizing: border-box;
+    top: px;height: 50px;
+    width: 80px;
+color: #E55473;
+    border: none;
+    outline: none;
+    padding: 10px;
+    z-index: 3;
     
+    
+}
+button{
+    position: relative;
+    overflow: hidden;
+    
+    
+    
+}
+button:hover{
+    color: #fff;
+}
+ button::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: #E55473;
+    z-index: -4;
+    
+    transition: 0.6s;
+
+}
+button:hover::after{
+    width: 100%;
+    
+}
 /* Another ends from here */
+/* Footer */
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    margin-top: 200px;
+}
+footer h1 span{
+    color: #E55473;
+}
+footer h1{
+    line-height: 120px;
+}
+footer p{
+    font-size: 12px;
+}
+small{
+    line-height: 60px;
+    color: gray;
+    font-size: 18px;
+}
